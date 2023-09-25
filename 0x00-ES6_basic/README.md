@@ -1,5 +1,6 @@
 # 0x00. ES6 Basics
 ##### `JavaScript` `ES6`
+![08806026ef621f900121](https://github.com/samuelselasi/alx-backend-javascript/assets/85158665/f1fc2319-0d62-4d40-858f-60c8b1a98832)
 
 ## Resources
 **Read or watch**:
