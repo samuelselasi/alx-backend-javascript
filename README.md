@@ -1,4 +1,5 @@
 # Backend Specialization
+![js](https://github.com/samuelselasi/alx-backend-javascript/assets/85158665/5f8bd8a7-e1e1-4644-81e0-7b3872a4591c)
 
 ## Table of Contents
 
@@ -7,7 +8,6 @@
 * [Projects](#projects)
 
 ## About
-
 This directory consists of:
 ### Modern JavaScript
 - ES6
