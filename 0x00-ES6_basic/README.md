@@ -336,3 +336,32 @@ bob@dylan:~$ npm run dev 6-main.js
 As of 2017, it was the seventh-highest income county in the United States, with a per capita personal income of $119,868. As of 2015, San Francisco proper had a GDP of $154.2 billion, and a GDP per capita of $178,479.
 bob@dylan:~$
 ```
+
+[7. Object property value shorthand syntax](./7-getBudgetObject.js)
+
+Notice how the keys and the variable names are the same?
+
+Modify the following function’s `budget` object to simply use the keyname instead.
+```
+export default function getBudgetObject(income, gdp, capita) {
+  const budget = {
+    income: income,
+    gdp: gdp,
+    capita: capita,
+  };
+
+  return budget;
+}
+```
+Execution:
+```
+bob@dylan:~$ cat 7-main.js
+import getBudgetObject from './7-getBudgetObject.js';
+
+console.log(getBudgetObject(400, 700, 900));
+
+bob@dylan:~$
+bob@dylan:~$ npm run dev 7-main.js 
+{ income: 400, gdp: 700, capita: 900 }
+bob@dylan:~$
+```
