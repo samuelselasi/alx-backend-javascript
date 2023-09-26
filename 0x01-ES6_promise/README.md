@@ -1,5 +1,6 @@
 # 0x01. ES6 Promises
 #### `JavaScript` `ES6`
+![75862d67ca51a042003c](https://github.com/samuelselasi/alx-backend-javascript/assets/85158665/fcc69067-e92d-476c-ad10-70f81ccb5723)
 
 ## Resources
 **Read or watch**:
