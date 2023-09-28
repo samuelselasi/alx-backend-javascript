@@ -300,7 +300,7 @@ Error: Class extending Building must override evacuationWarningMessage
 bob@dylan:~$
 ```
 
-[6. Inheritance]((./6-sky_high.js)
+[6. Inheritance](./6-sky_high.js)
 
 Import `Building` from `5-building.js`.
 
