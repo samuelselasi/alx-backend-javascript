@@ -1,6 +1,6 @@
 # 0x02. ES6 classes
 #### `OOP` `JavaScript` `ES6`
-
+![817248fb77fb5c2cef3f](https://github.com/samuelselasi/alx-backend-javascript/assets/85158665/3533b6d5-3e56-4fc0-a112-8c4d11ae1ddb)
 
 ## Resources
 ### Read or watch:
