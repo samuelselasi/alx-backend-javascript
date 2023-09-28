@@ -5,6 +5,10 @@ export default class Airport {
     this._code = code;
   }
 
+  get name() {
+    return this._name;
+  }
+
   set name(name) {
     this._name = name;
   }
@@ -18,6 +22,6 @@ export default class Airport {
   }
 
   toString() {
-    return `Airport [${this.code}]`;
+    return `[object ${this.code}]`;
   }
 }
