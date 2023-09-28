@@ -1,5 +1,23 @@
-import Airport from "./7-airport.js";
+/* eslint-disable no-underscore-dangle */
+export default class Airport {
+  constructor(name, code) {
+    this._name = name;
+    this._code = code;
+  }
 
-const airportSF = new Airport('San Francisco Airport', 'SFO');
-console.log(airportSF);
-console.log(airportSF.toString());
+  set name(name) {
+    this._name = name;
+  }
+
+  get code() {
+    return this._code;
+  }
+
+  set code(code) {
+    this._code = code;
+  }
+
+  toString() {
+    return `Airport [${this.code}]`;
+  }
+}
