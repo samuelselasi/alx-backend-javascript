@@ -1,6 +1,7 @@
 # 0x03. ES6 data manipulation
 #### `JavaScript` `ES6`
 
+![6ab7bec4727cb5c91257](https://github.com/samuelselasi/alx-backend-javascript/assets/85158665/f585b275-be2d-4d70-b2ee-c08974cdd97a)
 
 ## Resources
 **Read or watch**:
