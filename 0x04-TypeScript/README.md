@@ -273,3 +273,24 @@ Director
 console.log(createEmployee('$500'));
 Director
 ```
+
+[6. Creating functions specific to employees](./task_2/js/main.ts)
+
+Write a function `isDirector`:
+
+* it accepts `employee` as an argument
+* it will be used as a type predicate and if the employee is a director
+
+Write a function `executeWork`:
+
+* it accepts `employee` as an argument
+* if the employee is a `Director`, it will call `workDirectorTasks`
+* if the employee is a `Teacher`, it will call `workTeacherTasks`
+
+**Expected result**:
+```
+executeWork(createEmployee(200));
+Getting to work
+executeWork(createEmployee(1000));
+Getting to director tasks
+```
