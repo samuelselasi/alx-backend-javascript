@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
+
 interface DirectorInterface {
     workFromHome(): string;
     getCoffeeBreak(): string;
@@ -59,6 +60,18 @@ function executeWork(employee: Director | Teacher) {
     }
 }
 
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects) {
+    if (todayClass === 'Math') {
+        return 'Teaching Math';
+    } else if (todayClass === 'History') {
+        return 'Teaching History';
+    } else {
+        return 'Invalid subject';
+    }
+}
+
 const employee1 = createEmployee(200);
 const employee2 = createEmployee(1000);
 
@@ -67,3 +80,5 @@ console.log(createEmployee(1000).constructor.name);
 console.log(createEmployee('$500').constructor.name);
 console.log(executeWork(employee1));
 console.log(executeWork(employee2));
+console.log(teachClass('Math'));
+console.log(teachClass('History'));
