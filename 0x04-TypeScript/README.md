@@ -1,5 +1,6 @@
 # 0x04. Typescript
 #### `JavaScript` `TypeScript`
+![baea85b5e9a9fb5c36ec](https://github.com/samuelselasi/alx-backend-javascript/assets/85158665/3577525a-1ba3-4ebf-97ea-52351d09235c)
 
 ## Resources
 ### Read or watch:
