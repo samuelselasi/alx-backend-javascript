@@ -28,5 +28,17 @@ const director1: Directors = {
   numberOfReports: 17,
 };
 
+interface PrintTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
+
+const printTeacher: PrintTeacherFunction = (firstName, lastName) => {
+  const initial = firstName.charAt(0).toUpperCase();
+  return `${initial}. ${lastName}`;
+};
+
+const fullName = printTeacher("John", "Doe");
+
 console.log(teacher3);
 console.log(director1);
+console.log(fullName);
