@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 var Director = /** @class */ (function () {
     function Director() {
     }
@@ -45,6 +46,17 @@ function executeWork(employee) {
         return employee.workTeacherTasks();
     }
 }
+function teachClass(todayClass) {
+    if (todayClass === 'Math') {
+        return 'Teaching Math';
+    }
+    else if (todayClass === 'History') {
+        return 'Teaching History';
+    }
+    else {
+        return 'Invalid subject';
+    }
+}
 var employee1 = createEmployee(200);
 var employee2 = createEmployee(1000);
 console.log(createEmployee(200).constructor.name);
@@ -52,3 +64,5 @@ console.log(createEmployee(1000).constructor.name);
 console.log(createEmployee('$500').constructor.name);
 console.log(executeWork(employee1));
 console.log(executeWork(employee2));
+console.log(teachClass('Math'));
+console.log(teachClass('History'));
