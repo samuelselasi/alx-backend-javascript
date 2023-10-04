@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student and Teacher Information</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student and Teacher Information</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Full-Time Employee</th>
+                <th>Location</th>
+                <th>Years of Experience</th>
+                <th>Number of Reports</th>
+                <th>Contract</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>false</td>
+                <td>London</td>
+                <td></td>
+                <td></td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>true</td>
+                <td>London</td>
+                <td></td>
+                <td>17</td>
+                <td></td>
+            </tr>
+            <!-- You can add more rows for additional data if needed -->
+        </tbody>
+    </table>
+
+    <h2>JavaScript Output:</h2>
+
+    <!-- Your JavaScript code -->
+    <script>
+        // Your StudentClass definition
+        var StudentClass = function (_a) {
+            var firstName = _a.firstName, lastName = _a.lastName;
+            this.firstName = firstName;
+            this.lastName = lastName;
+        };
+        
+        StudentClass.prototype.workOnHomework = function () {
+            return 'Currently working';
+        };
+        
+        StudentClass.prototype.displayName = function () {
+            return this.firstName;
+        };
+        
+        // Your other code
+        var teacher3 = {
+            firstName: 'John',
+            fullTimeEmployee: false,
+            lastName: 'Doe',
+            location: 'London',
+            contract: false
+        };
+        
+        var director1 = {
+            firstName: 'John',
+            lastName: 'Doe',
+            location: 'London',
+            fullTimeEmployee: true,
+            numberOfReports: 17
+        };
+        
+        var printTeacher = function (firstName, lastName) {
+            var initial = firstName.charAt(0).toUpperCase();
+            return initial + ". " + lastName;
+        };
+        
+        var fullName = printTeacher("John", "Doe");
+        
+        var student = new StudentClass({ firstName: 'John', lastName: 'Doe' });
+        
+        console.log(teacher3);
+        console.log(director1);
+        console.log(fullName);
+        console.log(student.workOnHomework());
+        console.log(student.displayName());
+    </script>
+</body>
+</html>
