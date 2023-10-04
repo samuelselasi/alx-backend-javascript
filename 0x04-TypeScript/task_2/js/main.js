@@ -28,12 +28,27 @@ var Teacher = /** @class */ (function () {
 }());
 function createEmployee(salary) {
     if (typeof salary === 'number' && salary < 500) {
-        return new Teacher();
+        return new Teacher;
     }
     else {
-        return new Director();
+        return new Director;
     }
 }
-console.log(createEmployee(200));
-console.log(createEmployee(1000));
-console.log(createEmployee('$500'));
+function isDirector(employee) {
+    return 'workDirectorTasks' in employee;
+}
+function executeWork(employee) {
+    if (isDirector(employee)) {
+        return employee.workDirectorTasks();
+    }
+    else {
+        return employee.workTeacherTasks();
+    }
+}
+var employee1 = createEmployee(200);
+var employee2 = createEmployee(1000);
+console.log(createEmployee(200).constructor.name);
+console.log(createEmployee(1000).constructor.name);
+console.log(createEmployee('$500').constructor.name);
+console.log(executeWork(employee1));
+console.log(executeWork(employee2));
