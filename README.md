@@ -31,3 +31,4 @@ This directory consists of:
 1. [0x01-ES6_promise](./0x01-ES6_promise)
 2. [0x02-ES6_classes](./0x02-ES6_classes)
 3. [0x03-ES6_data_manipulation](./0x03-ES6_data_manipulation)
+4. [0x04-TypeScript](./0x04-TypeScript)
