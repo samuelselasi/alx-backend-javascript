@@ -1,5 +1,6 @@
 # 0x05. NodeJS Basics
 #### `Back-end` `JavaScript` `ES6` `NodeJS` `ExpressJS`
+![82692897e15d9f03256f](https://github.com/samuelselasi/alx-backend-javascript/assets/85158665/59388174-47ea-4bf9-86be-3cebffe0bfee)
 
 ## Resources
 **Read or watch**:
