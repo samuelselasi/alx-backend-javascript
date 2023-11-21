@@ -1,4 +1,5 @@
 # Full Server
+![What-is-ExpressJS](https://github.com/samuelselasi/alx-backend-javascript/assets/85158665/fb703575-a02c-41d9-a9a5-9aea47609433)
 
 ### 8.1 Organize the structure of the server
 * Create `2` directories within:
