@@ -33,3 +33,4 @@ This directory consists of:
 3. [0x03-ES6_data_manipulation](./0x03-ES6_data_manipulation)
 4. [0x04-TypeScript](./0x04-TypeScript)
 5. [0x05-Node_JS_basic](./0x05-Node_JS_basic)
+6. [0x06-unittests_in_js](./0x06-unittests_in_js)
