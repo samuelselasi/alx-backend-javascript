@@ -1,5 +1,6 @@
 # 0x06. Unittests in JS
 #### `UnitTests` `Back-end` `JavaScript` `ES6` `NodeJS` `ExpressJS` `Mocha`
+![90f79a666e174e6c4ffc](https://github.com/samuelselasi/alx-backend-javascript/assets/85158665/64a612c4-43fa-48eb-bc9e-3731751df3f0)
 
 ## Resources
 **Read or watch**:
