@@ -22,6 +22,7 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'no-console': 'off',
     'no-shadow': 'off',
+    'no-hooks': 'off',
     'no-restricted-syntax': [
       'error',
       'LabeledStatement',
@@ -30,7 +31,10 @@ module.exports = {
   },
   overrides:[
     {
-      files: ['*.js'],
+      files: ["5-payment.test.js"],
+      "rules": {
+        "jest/no-hooks": "off"
+      },
       excludedFiles: 'babel.config.js',
     }
   ]
