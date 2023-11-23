@@ -1,8 +1,11 @@
 // module containing endpoints on express server
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express();
 const port = 7865;
+
+app.use(bodyParser.json());
 
 app.get('/', (_, message) => {
   message.send('Welcome to the payment system');
@@ -19,12 +22,8 @@ app.get('/available_payments', (_req, res) => {
 });
 
 app.post('/login', (req, res) => {
-  let username = '';
-
-  if (req.body) {
-    username = req.body.userName;
-  }
-  res.send(`Welcome ${username}`);
+  const { userName } = req.body;
+  res.send(`Welcome ${userName}`);
 });
 
 app.listen(port, () => {
