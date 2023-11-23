@@ -35,4 +35,19 @@ describe('basic integration test', () => {
       done();
     });
   }));
+  it('check correct response for available_payments endpoint', () => new Promise((done) => {
+    request.get(`${API_URL}/available_payments`, (_err, res, body) => {
+      chai.expect(res.statusCode).to.be.equal(200);
+      chai.expect(JSON.parse(body))
+        .to.be.deep.equal({ payment_methods: { credit_cards: true, paypal: false } });
+      done();
+    });
+  }));
+  it('check correct response for login endpoint', () => new Promise((done) => {
+    request.post(`${API_URL}/login`, { json: { userName: 'Pinkbrook' } }, (_err, res, body) => {
+      chai.expect(res.statusCode).to.be.equal(200);
+      chai.expect(body).to.be.equal('Welcome Pinkbrook');
+      done();
+    });
+  }));
 });
