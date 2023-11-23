@@ -147,12 +147,12 @@ Spies are a useful wrapper that will execute the wrapped function, and log usefu
 
 #### Let’s install Sinon with npm:
 
-* Create a new file named `utils.js`
+* Create a new file named [utils.js](./utils.js)
 * Create a new module named `Utils`
 * Create a property named `calculateNumber` and paste your previous code in the function
 * Export the `Utils` module
 
-#### Create a new file named `3-payment.js`:
+#### Create a new file named [3-payment.js](./3-payment.js):
 
 * Create a new function named `sendPaymentRequestToApi`. The function takes two argument `totalAmount`, and `totalShipping`
 * The function calls the `Utils.calculateNumber` function with type `SUM`, `totalAmount` as `a`, `totalShipping` as `b` and display in the console the message `The total is: <result of the sum>`
@@ -172,4 +172,30 @@ Spies are a useful wrapper that will execute the wrapped function, and log usefu
 * Remember to always restore a spy after using it in a test, it will prevent you from having weird behaviors
 * `Spies` are really useful and allow you to focus only on what your code is doing and not the downstream APIs or functions
 * Remember that integration test is different from unit test. Your unit test should test your code, not the code of a different function
+
+
+[4. Stubs](./4-payment.test.js)
+
+Stubs are similar to spies. Except that you can provide a different implementation of the function you are wrapping. Sinon can be used as well for stubs.
+
+#### Create a new file [4-payment.js](./4-payment.js), and copy the code from [3-payment.js](./3-payment.js) (same content, same behavior)
+
+#### Create a new file `4-payment.test.js`, and copy the code from [3-payment.test.js](./3-payment.test.js)
+
+* Imagine that calling the function Utils.calculateNumber is actually calling an API or a very expensive method. You don’t necessarily want to do that on every test run
+* Stub the function `Utils.calculateNumber` to always return the same number `10`
+* Verify that the `stub` is being called with `type = SUM`, `a = 100`, and `b = 20`
+* Add a `spy` to verify that `console.log` is logging the correct message `The total is: 10`
+
+#### Requirements:
+
+* You should be able to run the test suite using `npm test 4-payment.test.js`
+* Every test should pass without any warning
+* You should use a `stub` to complete this exercise
+* Do not forget to restore the `spy` and the `stub`
+
+#### Tips:
+
+* Using `stubs` allows you to greatly speed up your test. When executing thousands of tests, saving a few seconds is important
+* Using `stubs` allows you to control specific edge case (e.g a function throwing an error or returning a specific result like a number or a timestamp)
 
