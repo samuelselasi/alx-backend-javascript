@@ -223,3 +223,29 @@ Inside the same describe, create 2 tests:
 * You should use only one `spy` to complete this exercise
 * You should use a `beforeEach` and a `afterEach` hooks to complete this exercise
 
+
+[6. Async tests with done](./6-payment_token.test.js)
+
+Look into how to support `async testing`, for example when waiting for the answer of an API or from a `Promise`
+
+#### Create a new file [6-payment_token.js](./6-payment_token.js):
+
+* Create a new function named `getPaymentTokenFromAPI`
+* The function will take an argument called `success` (boolean)
+* When `success` is `true`, it should return a resolved promise with the object `{data: 'Successful response from the API' }`
+* Otherwise, the function is doing nothing.
+
+#### Create a new file `6-payment_token.test.js` and write a test suite named `getPaymentTokenFromAPI`
+
+* How to test the result of `getPaymentTokenFromAPI(true)`?
+
+#### Tips:
+
+* You should be extremely careful when working with `async` testing. Without calling `done` properly, your test could be always passing even if what you are actually testing is never executed
+
+#### Requirements:
+
+* You should be able to run the test suite using `npm test 6-payment_token.test.js`
+* Every test should pass without any warning
+* You should use the `done` callback to execute this test
+
